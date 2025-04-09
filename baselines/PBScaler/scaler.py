@@ -69,8 +69,7 @@ class PBScaler(ScalerTemplate):
         cur_time = int(round(time.time()))
         self.monitor.set_time_range(cur_time-60, cur_time, step=5)
         latency_df = self.monitor.get_latency(self.mss, self.namespace, p=0.9, range=True)
-        detect_mss = self.mss + ['istio-ingressgateway']
-        for ms in detect_mss:
+        for ms in self.mss:
             if f'{ms}&0.9' in latency_df.columns:
                 latency = latency_df[f'{ms}&0.9'].values.mean()
                 if latency > self.SLA * (1 + self.cfg.alpha / 2):
@@ -83,8 +82,7 @@ class PBScaler(ScalerTemplate):
         cur_time = int(round(time.time()))
         self.monitor.set_time_range(cur_time - 60, cur_time, step=5)
         latency_df = self.monitor.get_latency(self.mss, self.namespace, p=0.9, range=True)
-        detect_mss = self.mss + ['istio-ingressgateway']
-        for ms in detect_mss:
+        for ms in self.mss:
             if f'{ms}&0.9' in latency_df.columns:
                 latency = latency_df[f'{ms}&0.9'].values.mean()
                 if latency > self.SLA * (1 + self.cfg.alpha / 2):
@@ -134,7 +132,7 @@ class PBScaler(ScalerTemplate):
         self.logger.info(f"rank list: {rank_list}")
         rank_list = [ms for ms, _ in rank_list]
         svc_counts = self.get_svc_count(rank_list)
-        roots = list(filter(lambda root: svc_counts[root] + 1 <= self.cfg.max_count, rank_list))[:self.cfg.k]
+        roots = list(filter(lambda root: svc_counts[root] < self.cfg.max_count, rank_list))[:self.cfg.k]
         if len(roots) != 0:
             self.choose_action(target_svcs = roots, option = 'add')
 
@@ -146,7 +144,7 @@ class PBScaler(ScalerTemplate):
         dim = len(target_svcs)
         if option == 'add':
             self.logger.info('begin scale out')
-            min_array, max_array = [int(svc_count[t]) + 1 if svc_count[t] < self.cfg.max_count else svc_count[t] for t in target_svcs], [self.cfg.max_count] * dim
+            min_array, max_array = [int(svc_count[t]) + 1 if svc_count[t]+1 < self.cfg.max_count else svc_count[t] for t in target_svcs], [self.cfg.max_count] * dim
         elif option == 'reduce':
             self.logger.info('begin scale in')
             min_array, max_array = [self.cfg.min_count] * dim, [int(svc_count[t]) for t in target_svcs if svc_count[t] > self.cfg.min_count]

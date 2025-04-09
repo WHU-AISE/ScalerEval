@@ -11,9 +11,8 @@ from eval import collect_metrics, SLA_violation, resource_consumption, succ_rate
 
 async def performance_comparison_flow():
     config = Config()
-    config.locust_exp_name = 'wiki'
     for benchmark in ['hipster', 'sockshop']:
-        for scaler in ['None', 'KHPA-20', 'KHPA-50', 'KHPA-80', 'Showar', 'PBScaler']:
+        for scaler in ['None','KHPA-20', 'KHPA-50', 'KHPA-80', 'Showar', 'PBScaler']:
             config.select_benchmark = benchmark
             config.select_scaler = scaler
 
@@ -39,18 +38,41 @@ async def performance_comparison_flow():
             end_env(config)
             time.sleep(60)
 
+
+async def performance_eval_flow():
+    config = Config()
+    
+    # init microservices
+    init_env(config)
+
+    # register autoscaler
+    scaler, task = register_scaler(config)
+
+    # inject workload
+    load_injector = LoadInjector(config)
+    await load_injector.inject()
+
+    # collect metrics
+    collect_metrics(config)
+
+    # cancel autoscaler
+    scaler.cancel()
+    if task != None:
+        await task
+
+    # stop microservices
+    end_env(config)
+
 def eval():
     config = Config()
-    for scaler in ['None','KHPA-20', 'KHPA-50', 'KHPA-80', 'Showar', 'PBScaler']:
-        config.select_scaler = scaler
-        print(f'evaluate {scaler}')
-        slo_rate = SLA_violation(config)
-        print(f'SLO violation rate: {slo_rate:.3f}')
-        sr = succ_rate(config)
-        print(f'success rate: {sr:.3f}')
-        cpu, mem = resource_consumption(config)
-        print(f'CPU usage: {cpu:.3f} cores, Memory usage: {mem:.3f} MB')
-        print('*' *100)
+    print(f'evaluate {config.select_scaler}')
+    slo_rate = SLA_violation(config)
+    print(f'SLO violation rate: {slo_rate:.3f}')
+    sr = succ_rate(config)
+    print(f'success rate: {sr:.3f}')
+    cpu, mem = resource_consumption(config)
+    print(f'CPU usage: {cpu:.3f} cores, Memory usage: {mem:.3f} MB')
+    print('*' *100)
 
 
 def clear_environment():
@@ -59,10 +81,11 @@ def clear_environment():
 
 
 async def main():
-    await performance_comparison_flow()
+    await performance_eval_flow()
+    # await performance_comparison_flow()
         
 
 if __name__ == '__main__':
     asyncio.run(main())
-    # eval()
+    eval()
     # clear_environment()

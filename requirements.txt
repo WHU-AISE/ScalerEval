@@ -1,0 +1,16 @@
+geatpy==2.7.0
+gevent==24.11.1
+kubernetes==32.0.1
+locust==2.33.2
+matplotlib==3.9.2
+networkx==3.2.1
+numpy==1.26.4
+pandas==2.2.3
+psutil==6.1.0
+pytz==2024.1
+PyYAML==6.0.2
+requests==2.32.3
+schedule==1.2.2
+scikit_learn==1.6.1
+scipy==1.13.1
+simple_pid==2.0.1

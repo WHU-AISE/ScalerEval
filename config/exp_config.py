@@ -1,7 +1,7 @@
 class Config:
     def __init__(self):
-        self.select_benchmark = 'sockshop'
-        self.select_scaler = 'None' # [None, KHPA-20, KHPA-50, KHPA-80, Showar, PBScaler]
+        self.select_benchmark = 'hipster'
+        self.select_scaler = 'KHPA-80' # [None, KHPA-20, KHPA-50, KHPA-80, Showar, PBScaler]
         self.locust_exp_name = 'wiki'
         self.locust_exp_time = 1200
         self.locust_load_dist = '1'
