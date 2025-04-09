@@ -1,0 +1,1 @@
+{"carts": [null, null], "carts-db": [null, null], "catalogue": ["200m", null], "catalogue-db": [null, null], "front-end": ["300m", null], "orders": [null, null], "orders-db": [null, null], "payment": ["200m", null], "queue-master": ["300m", null], "rabbitmq": [null, null], "session-db": [null, null], "shipping": ["300m", null], "user": ["300m", null], "user-db": [null, null]}

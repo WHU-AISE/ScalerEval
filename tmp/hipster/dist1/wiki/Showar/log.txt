@@ -1,0 +1,67 @@
+[2025-04-03 10:28:27,452] DESKTOP-4UL329D/INFO/locust.main: Starting Locust 2.33.2
+[2025-04-03 10:28:27,452] DESKTOP-4UL329D/WARNING/locust.main: Python 3.9 support is deprecated and will be removed soon
+[2025-04-03 10:28:27,455] DESKTOP-4UL329D/INFO/locust.runners: Shape test starting.
+[2025-04-03 10:28:27,455] DESKTOP-4UL329D/INFO/locust.runners: Shape worker starting
+[2025-04-03 10:28:27,455] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 561 users at 50.00 spawn rate
+[2025-04-03 10:28:27,455] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 561 users at a rate of 50.00 per second
+[2025-04-03 10:28:38,504] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 561} (561 total users)
+[2025-04-03 10:29:28,785] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 584 users at 50.00 spawn rate
+[2025-04-03 10:29:28,788] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 584 users at a rate of 50.00 per second
+[2025-04-03 10:29:28,790] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 584} (584 total users)
+[2025-04-03 10:30:28,022] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 552 users at 50.00 spawn rate
+[2025-04-03 10:30:28,026] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 552 users at a rate of 50.00 per second
+[2025-04-03 10:30:28,035] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 552} (552 total users)
+[2025-04-03 10:31:28,290] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 457 users at 50.00 spawn rate
+[2025-04-03 10:31:28,297] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 457 users at a rate of 50.00 per second
+[2025-04-03 10:31:29,312] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 457} (457 total users)
+[2025-04-03 10:32:28,543] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 364 users at 50.00 spawn rate
+[2025-04-03 10:32:28,544] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 364 users at a rate of 50.00 per second
+[2025-04-03 10:32:29,556] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 364} (364 total users)
+[2025-04-03 10:33:28,810] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 319 users at 50.00 spawn rate
+[2025-04-03 10:33:28,810] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 319 users at a rate of 50.00 per second
+[2025-04-03 10:33:28,819] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 319} (319 total users)
+[2025-04-03 10:34:28,134] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 305 users at 50.00 spawn rate
+[2025-04-03 10:34:28,136] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 305 users at a rate of 50.00 per second
+[2025-04-03 10:34:28,140] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 305} (305 total users)
+[2025-04-03 10:35:28,378] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 316 users at 50.00 spawn rate
+[2025-04-03 10:35:28,378] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 316 users at a rate of 50.00 per second
+[2025-04-03 10:35:28,383] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 316} (316 total users)
+[2025-04-03 10:36:28,674] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 367 users at 50.00 spawn rate
+[2025-04-03 10:36:28,674] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 367 users at a rate of 50.00 per second
+[2025-04-03 10:36:29,677] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 367} (367 total users)
+[2025-04-03 10:37:28,037] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 395 users at 50.00 spawn rate
+[2025-04-03 10:37:28,037] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 395 users at a rate of 50.00 per second
+[2025-04-03 10:37:28,039] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 395} (395 total users)
+[2025-04-03 10:38:28,720] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 521 users at 50.00 spawn rate
+[2025-04-03 10:38:28,720] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 521 users at a rate of 50.00 per second
+[2025-04-03 10:38:30,731] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 521} (521 total users)
+[2025-04-03 10:39:28,113] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 647 users at 50.00 spawn rate
+[2025-04-03 10:39:28,113] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 647 users at a rate of 50.00 per second
+[2025-04-03 10:39:30,117] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 647} (647 total users)
+[2025-04-03 10:40:28,406] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 726 users at 50.00 spawn rate
+[2025-04-03 10:40:28,406] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 726 users at a rate of 50.00 per second
+[2025-04-03 10:40:29,411] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 726} (726 total users)
+[2025-04-03 10:41:28,614] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 740 users at 50.00 spawn rate
+[2025-04-03 10:41:28,614] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 740 users at a rate of 50.00 per second
+[2025-04-03 10:41:28,619] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 740} (740 total users)
+[2025-04-03 10:42:28,876] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 724 users at 50.00 spawn rate
+[2025-04-03 10:42:28,876] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 724 users at a rate of 50.00 per second
+[2025-04-03 10:42:28,883] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 724} (724 total users)
+[2025-04-03 10:43:28,147] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 698 users at 50.00 spawn rate
+[2025-04-03 10:43:28,149] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 698 users at a rate of 50.00 per second
+[2025-04-03 10:43:28,158] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 698} (698 total users)
+[2025-04-03 10:44:28,444] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 728 users at 50.00 spawn rate
+[2025-04-03 10:44:28,444] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 728 users at a rate of 50.00 per second
+[2025-04-03 10:44:28,453] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 728} (728 total users)
+[2025-04-03 10:45:28,760] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 674 users at 50.00 spawn rate
+[2025-04-03 10:45:28,762] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 674 users at a rate of 50.00 per second
+[2025-04-03 10:45:29,771] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 674} (674 total users)
+[2025-04-03 10:46:27,994] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 570 users at 50.00 spawn rate
+[2025-04-03 10:46:27,996] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 570 users at a rate of 50.00 per second
+[2025-04-03 10:46:30,002] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 570} (570 total users)
+[2025-04-03 10:47:28,250] DESKTOP-4UL329D/INFO/locust.runners: Shape test updating to 490 users at 50.00 spawn rate
+[2025-04-03 10:47:28,250] DESKTOP-4UL329D/INFO/locust.runners: Ramping to 490 users at a rate of 50.00 per second
+[2025-04-03 10:47:29,344] DESKTOP-4UL329D/INFO/locust.runners: All users spawned: {"WebsiteUser": 490} (490 total users)
+[2025-04-03 10:48:28,688] DESKTOP-4UL329D/INFO/locust.runners: Shape test stopping
+[2025-04-03 10:48:29,002] DESKTOP-4UL329D/INFO/locust.main: --run-time limit reached, shutting down
+[2025-04-03 10:48:29,002] DESKTOP-4UL329D/INFO/locust.main: Shutting down (exit code 0)

@@ -1,0 +1,15 @@
+Method,Name,Error,Occurrences
+GET,/product/1YMWWN1N4O,HTTPError('500 Server Error: Internal Server Error for url: /product/1YMWWN1N4O'),5
+POST,/cart,HTTPError('500 Server Error: Internal Server Error for url: /cart'),18
+GET,/product/66VCHSJNUP,HTTPError('500 Server Error: Internal Server Error for url: /product/66VCHSJNUP'),5
+GET,/product/9SIQT8TOJO,HTTPError('500 Server Error: Internal Server Error for url: /product/9SIQT8TOJO'),6
+GET,/product/LS4PSXUNUM,HTTPError('500 Server Error: Internal Server Error for url: /product/LS4PSXUNUM'),3
+GET,/product/OLJCESPC7Z,HTTPError('500 Server Error: Internal Server Error for url: /product/OLJCESPC7Z'),8
+POST,/setCurrency,HTTPError('500 Server Error: Internal Server Error for url: /setCurrency'),41
+GET,/,HTTPError('500 Server Error: Internal Server Error for url: /'),13
+GET,/product/0PUK6V6EV0,HTTPError('500 Server Error: Internal Server Error for url: /product/0PUK6V6EV0'),5
+GET,/cart,HTTPError('500 Server Error: Internal Server Error for url: /cart'),13
+GET,/product/L9ECAV7KIM,HTTPError('500 Server Error: Internal Server Error for url: /product/L9ECAV7KIM'),7
+GET,/product/2ZYFJ3GM2N,HTTPError('500 Server Error: Internal Server Error for url: /product/2ZYFJ3GM2N'),6
+POST,/cart/checkout,HTTPError('500 Server Error: Internal Server Error for url: /cart/checkout'),2
+GET,/product/6E92ZMYYFZ,HTTPError('500 Server Error: Internal Server Error for url: /product/6E92ZMYYFZ'),6

@@ -1,0 +1,4 @@
+Method,Name,Error,Occurrences
+POST,/cart,HTTPError('500 Server Error: Internal Server Error for url: /cart'),6383
+POST,/orders,HTTPError('500 Server Error: Internal Server Error for url: /orders'),2498
+POST,/orders,HTTPError('406 Client Error: Not Acceptable for url: /orders'),1466
