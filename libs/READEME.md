@@ -78,3 +78,13 @@ If successful, you will see:
 
 ![](../imgs/prometheus-target.png)
 
+### 5. Test
+You can test these software using the following commands in the Prometheus dashboard:
+```
+# test kube-state-metrics
+count(kube_pod_info{namespace="istio-system"}) by (created_by_name)
+# test Node Exporter
+100 - (sum by (job) (rate(node_cpu_seconds_total{mode="idle"}[1m])) * 100 /count by (job) (node_cpu_seconds_total{mode="idle"}))
+```
+If successful, you will see:
+![](../imgs/prom_ui.jpg)
