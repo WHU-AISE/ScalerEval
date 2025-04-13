@@ -62,15 +62,15 @@ You should add the configurations of the above software into prometheus:
 scrape_configs:
 - job_name: "k8s-info"
   static_configs:
-  - targets: ["<master-host-ip>:30006"] # fill this field using your host ip
+  - targets: ["<master-host-ip>:30006"] # The ip:port of Kube-state-metrics.
 - job_name: 'master'
   metrics_path: /metrics
   static_configs:
-  - targets: ['<master-host-ip>:9100']
+  - targets: ['<master-host-ip>:9100'] # The ip:port of Node Exporter.
 - job_name: 'worker-1'
   metrics_path: /metrics
   static_configs:
-  - targets: ['<worker-1-host-ip>:9100']
+  - targets: ['<worker-1-host-ip>:9100'] # The ip:port of Node Exporter.
 ...
 ```
 
