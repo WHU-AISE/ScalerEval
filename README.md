@@ -25,7 +25,7 @@ Supported functions:
 - Kube-State-Metrics
 - Node Exporter
 
-The installation of these tools can be seen in [libs/README.md](https://github.com/WHU-AISE/ScalerEval/blob/main/libs/READEME.md)
+**Note**: The installation of these tools can be seen in [libs/README.md](https://github.com/WHU-AISE/ScalerEval/blob/main/libs/READEME.md). Please eusure all softwares is installed properly.
 
 ## Quick Start
 
