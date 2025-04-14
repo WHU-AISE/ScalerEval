@@ -218,7 +218,12 @@ For more details, please refer to the cases in the `./baselines` folder.
 ## How to Cite
 
 ```
-TODO
+@misc{xie2025scalereval,
+  title = {ScalerEval: Automated and Consistent Evaluation Testbed for Auto-scalers in Microservices},
+  author = {Shuaiyu Xie, Jian Wang, Yang Luo, Yunqing Yong, Yuzhen Tan, Bing Li},
+  year = {2025},
+  url = {https://arxiv.org/abs/2504.08308} 
+}
 ```
 
 
