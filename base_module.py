@@ -6,7 +6,7 @@ from utils.cloud.executor import KubernetesClient
 from utils.cloud.monitor import PrometheusClient
 from config.exp_config import Config
 from baselines.scaler_factory import ScalerFactory
-
+from utils.ssh_client import ssh_execute_command
 
 def init_client(config: Config):
     kube_client = KubernetesClient(config.kube_config)
@@ -47,6 +47,25 @@ def end_env(config):
     _, kube_client = init_client(config=config)
     namespace = config.benchmarks[config.select_benchmark]['namespace']
     kube_client.delete_namespace(namespace)
+
+    ## If you want to remove the volumes, execute the follow command
+    # if config.select_benchmark == 'xxxxxx':
+    #     clear_volumes('/tmp/volumes')
+
+
+def clear_volumes(path):
+    # complete the configuration (Please check carefully!!!)
+    servers = [
+        {"hostname": "192.168.31.68", "username": "xxxx", "password": "xxx"},
+        {"hostname": "192.168.31.202", "username": "xxxx", "password": "xxx"}
+    ]
+    # clear the volume
+    for server in servers:
+        print(f"clean files in {path} of {server['hostname']}...")
+        command = f"sudo rm -rf {path}/*"
+        ssh_execute_command(server, command)
+
+    print("all volumes are cleaned.")
 
 
 

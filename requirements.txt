@@ -14,3 +14,4 @@ schedule==1.2.2
 scikit_learn==1.6.1
 scipy==1.13.1
 simple_pid==2.0.1
+paramiko==3.5.1
