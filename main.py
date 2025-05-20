@@ -71,7 +71,7 @@ def eval():
     sr = succ_rate(config)
     print(f'success rate: {sr:.3f}')
     cpu, mem = resource_consumption(config)
-    print(f'CPU usage: {cpu:.3f} cores, Memory usage: {mem:.3f} MB')
+    print(f'CPU usage: {cpu:.3f}, Memory usage: {mem:.3f} MB')
     print('*' *100)
 
 
