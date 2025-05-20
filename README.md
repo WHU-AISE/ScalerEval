@@ -125,7 +125,7 @@ namespace hipster was deleted.
 evaluate xxx
 SLO violation rate: 0.071
 success rate: 1.000
-CPU usage: 1723.787 cores, Memory usage: 23481.393 MB
+CPU usage: 1723.787, Memory usage: 23481.393 MB
 ****************************************************************************************************
 ```
 
