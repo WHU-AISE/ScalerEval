@@ -55,7 +55,6 @@ spec:
             medium: Memory
       nodeSelector:
         beta.kubernetes.io/os: linux
-        kubernetes.io/hostname: lab-desktop
 ---
 apiVersion: v1
 kind: Service
@@ -379,7 +378,6 @@ spec:
             medium: Memory
       nodeSelector:
         beta.kubernetes.io/os: linux
-        kubernetes.io/hostname: lab-desktop
 
 ---
 apiVersion: v1
@@ -562,7 +560,6 @@ spec:
         - containerPort: 80
       nodeSelector:
         beta.kubernetes.io/os: linux
-        kubernetes.io/hostname: lab-desktop
 ---
 apiVersion: v1
 kind: Service
@@ -755,7 +752,6 @@ spec:
             medium: Memory
       nodeSelector:
         beta.kubernetes.io/os: linux
-        kubernetes.io/hostname: lab-desktop
 ---
 apiVersion: v1
 kind: Service
